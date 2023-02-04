@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import "./Home.css"
+import Chatbot from "./chatbot/Chatbot";
 const Home = () => {
   const id=useParams().id;
   const [hospitals, sethospitals] = useState();
@@ -124,6 +125,7 @@ const Home = () => {
       
       ))}
     </div>
+    <Chatbot/>
     </div>
   )
 }
